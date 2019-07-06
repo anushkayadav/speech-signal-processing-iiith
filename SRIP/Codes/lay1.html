@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../libraries/bootstrap/css/bootstrap.css">
+	<title>Speech Production</title>
+	<style>
+		table {
+			font-family: arial, sans-serif;
+  			border-collapse: collapse;
+  			width: 75%;
+  			
+  		}
+  		td, th {
+  			border: 1px solid #dddddd;
+  			
+  			
+  			padding: 7px;
+		}
+
+		tr:nth-child(even) {
+  			background-color: #dddddd;
+		}
+
+		#head1{
+  			background-color:rgba(210, 196, 255,0.6);
+  			padding: 30px;
+  			text-align: center;
+  			
+  			color: black;
+  			font-weight: bold;
+		}
+		.group1{
+			text-align:center;
+
+		}
+		.speechwave{
+
+		}
+		option{
+			background-color: white;
+			color:black;
+		}
+
+		option:hover{
+  			background-color:rgba(82, 227, 233,0.2);
+		}
+
+	</style>
+</head>
+<body>
+	<div id='head1'class="container-fluid"><h2>Speech Production Mechanism</h2></div>
+	<hr>
+	<div class='container group1 '>
+		<div id='head2'><h4>Part-1 : <i>  Acoustic Phonetic labelling(pre-labelled)</i></h4></div>
+		<div class="btn-group">
+			<select id="mySelect" class="btn btn-outline-info" style="border-radius: 5px">
+				<option value="" selected disabled hidden>Choose Language</option>
+				<option value="Hindi" >Hindi</option>
+ 	 			<option value="Telugu">Telugu</option>
+  				<option value="Kannada">Kannada</option>
+  				<option value="Lang 4">Lang 4</option>
+			</select>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+			<button type="button" class="btn btn-outline-warning  " style="border-radius: 5px">Reset</button>
+		</div><br><br>
+		
+
+	</div>
+	
+
+	<table  align="center">
+		<tr>
+			<td>Utterance</td>
+			<td id='utterance'>text....................</td>
+		</tr>
+		<tr>
+			<td>Transliteration</td>
+			<td id='translit'>text.......................</td>
+		</tr>
+		<tr>
+			<td>Syllables</td>
+			<td id='syll'>text...................</td>
+		</tr>
+		<tr>
+			<td>Phonemes</td>
+			<td id='ph'>text............................</td>
+		</tr>
+		
+	</table>
+
+	<div class="container speech_wave">
+
+	</div>
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../libraries/bootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="../libraries/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../libraries/bootstrap/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		$('[data-toggle="tooltip"]').tooltip();
+    	});
+    </script>    
+
+
+</body>
+</html>
