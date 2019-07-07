@@ -15,7 +15,7 @@
   			border: 1px solid #dddddd;
   			
   			
-  			padding: 7px;
+  			padding: 3px;
 		}
 
 		tr:nth-child(even) {
@@ -58,8 +58,8 @@
 				<option value="" selected disabled hidden>Choose Language</option>
 				<option value="Hindi" >Hindi</option>
  	 			<option value="Telugu">Telugu</option>
-  				<option value="Kannada">Kannada</option>
-  				<option value="Lang 4">Lang 4</option>
+  				<option value="Tamil">Tamil</option>
+  				<!--<option value="Lang 4">Lang 4</option>-->
 			</select>
 			&nbsp;
 			&nbsp;
@@ -91,10 +91,15 @@
 		
 	</table>
 
-	<div class="container speech_wave">
+	<button type="button" class="btn btn-outline-warning m-3  " id="play" style="border-radius: 5px; text-align: center;">play</button>
 
-	</div>
+	<div id="waveform"></div>
 
+
+
+	<table id="final1"></table>
+	<table id="final2"></table>
+	<table id="final3"></table>
 
 	
 
@@ -114,6 +119,7 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="../libraries/bootstrap/js/popper.min.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
     <script type="text/javascript" src="../libraries/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript" src="../libraries/bootstrap/js/bootstrap.bundle.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
