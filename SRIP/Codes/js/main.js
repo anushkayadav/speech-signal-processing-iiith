@@ -24,20 +24,7 @@ function init(){
                 'font-size': '10px'
             }
         }),
-            /* WaveSurfer.regions.create({
-                regions: [
-                    {
-                        start: 0,
-                        end: 0.5,
-                        color: 'hsla(400, 100%, 30%, 0.1)'
-                    },
-                    {
-                        start: 3,
-                        end: 100,
-                        color: 'hsla(200, 50%, 70%, 0.1)'
-                    }
-                ]
-            }),*/
+         
 
             WaveSurfer.regions.create(),
         ]
@@ -63,11 +50,7 @@ slider.oninput = function () {
   wavesurfer.zoom(zoomLevel);
 };
 
-//document.querySelector('#slider').oninput = function () {
- //   wavesurfer.zoom(Number(this.value));
-//};
 
-//wavesurfer.addRegion({id:'one',start:0,end:0.25});
 
 
     wavesurfer.on('ready', function() {
@@ -281,6 +264,196 @@ console.log(wavesurfer.regions.list)
   			r14c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
   			r14c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
 
+  			var r15 = table.insertRow(15 );
+  			var r15c1 = r15.insertCell(0);
+  			var r15c2 = r15.insertCell(1);
+  			var r15c3 = r15.insertCell(2);
+  			var r15c4 = r15.insertCell(3);
+  			r15c1.innerHTML = '<button type="button"  " id="k1" ">k</button>;'
+  			r15c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r15c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r15c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
+  			var r16 = table.insertRow(16 );
+  			var r16c1 = r16.insertCell(0);
+  			var r16c2 = r16.insertCell(1);
+  			var r16c3 = r16.insertCell(2);
+  			var r16c4 = r16.insertCell(3);
+  			r16c1.innerHTML = '<button type="button"  " id="e2" ">e</button>;'
+  			r16c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r16c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r16c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
+  			var r17 = table.insertRow(17 );
+  			var r17c1 = r17.insertCell(0);
+  			var r17c2 = r17.insertCell(1);
+  			var r17c3 = r17.insertCell(2);
+  			var r17c4 = r17.insertCell(3);
+  			r17c1.innerHTML = '<button type="button"  " id="p" ">p</button>;'
+  			r17c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r17c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r17c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
+  			var r18 = table.insertRow(18 );
+  			var r18c1 = r18.insertCell(0);
+  			var r18c2 = r18.insertCell(1);
+  			var r18c3 = r18.insertCell(2);
+  			var r18c4 = r18.insertCell(3);
+  			r18c1.innerHTML = '<button type="button"  " id="r2" ">r</button>;'
+  			r18c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r18c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r18c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
+  			var r19 = table.insertRow(19 );
+  			var r19c1 = r19.insertCell(0);
+  			var r19c2 = r19.insertCell(1);
+  			var r19c3 = r19.insertCell(2);
+  			var r19c4 = r19.insertCell(3);
+  			r19c1.innerHTML = '<button type="button"  " id="a3" ">a</button>;'
+  			r19c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r19c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r19c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
+  			var r20 = table.insertRow(20 );
+  			var r20c1 = r20.insertCell(0);
+  			var r20c2 = r20.insertCell(1);
+  			var r20c3 = r20.insertCell(2);
+  			var r20c4 = r20.insertCell(3);
+  			r20c1.innerHTML = '<button type="button"  " id="v" ">v</button>;'
+  			r20c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r20c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r20c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
+  			var r21 = table.insertRow(21 );
+  			var r21c1 = r21.insertCell(0);
+  			var r21c2 = r21.insertCell(1);
+  			var r21c3 = r21.insertCell(2);
+  			var r21c4 = r21.insertCell(3);
+  			r21c1.innerHTML = '<button type="button"  " id="a4" ">a</button>;'
+  			r21c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r21c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r21c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
+  			var r22 = table.insertRow(22 );
+  			var r22c1 = r22.insertCell(0);
+  			var r22c2 = r22.insertCell(1);
+  			var r22c3 = r22.insertCell(2);
+  			var r22c4 = r22.insertCell(3);
+  			r22c1.innerHTML = '<button type="button"  " id="k2" ">k</button>;'
+  			r22c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r22c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r22c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
+  			var r23 = table.insertRow(23 );
+  			var r23c1 = r23.insertCell(0);
+  			var r23c2 = r23.insertCell(1);
+  			var r23c3 = r23.insertCell(2);
+  			var r23c4 = r23.insertCell(3);
+  			r23c1.innerHTML = '<button type="button"  " id="t2" ">t</button>;'
+  			r23c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r23c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r23c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
+  			var r24 = table.insertRow(24 );
+  			var r24c1 = r24.insertCell(0);
+  			var r24c2 = r24.insertCell(1);
+  			var r24c3 = r24.insertCell(2);
+  			var r24c4 = r24.insertCell(3);
+  			r24c1.innerHTML = '<button type="button"  " id="aa2" ">aa</button>;'
+  			r24c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r24c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r24c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
+  			var r25 = table.insertRow(25 );
+  			var r25c1 = r25.insertCell(0);
+  			var r25c2 = r25.insertCell(1);
+  			var r25c3 = r25.insertCell(2);
+  			var r25c4 = r25.insertCell(3);
+  			r25c1.innerHTML = '<button type="button"  " id="n2" ">n</button>;'
+  			r25c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r25c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r25c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
+  			var r26 = table.insertRow(26 );
+  			var r26c1 = r26.insertCell(0);
+  			var r26c2 = r26.insertCell(1);
+  			var r26c3 = r26.insertCell(2);
+  			var r26c4 = r26.insertCell(3);
+  			r26c1.innerHTML = '<button type="button"  " id="e3" ">e</button>;'
+  			r26c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r26c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r26c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
+  			var r27 = table.insertRow(27 );
+  			var r27c1 = r27.insertCell(0);
+  			var r27c2 = r27.insertCell(1);
+  			var r27c3 = r27.insertCell(2);
+  			var r27c4 = r27.insertCell(3);
+  			r27c1.innerHTML = '<button type="button"  " id="ph" ">ph</button>;'
+  			r27c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r27c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r27c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
+  			var r28 = table.insertRow(28 );
+  			var r28c1 = r28.insertCell(0);
+  			var r28c2 = r28.insertCell(1);
+  			var r28c3 = r28.insertCell(2);
+  			var r28c4 = r28.insertCell(3);
+  			r28c1.innerHTML = '<button type="button"  " id="i2" ">i</button>;'
+  			r28c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r28c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r28c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
+  			var r29 = table.insertRow(29 );
+  			var r29c1 = r29.insertCell(0);
+  			var r29c2 = r29.insertCell(1);
+  			var r29c3 = r29.insertCell(2);
+  			var r29c4 = r29.insertCell(3);
+  			r29c1.innerHTML = '<button type="button"  " id="r3" ">r</button>;'
+  			r29c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r29c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r29c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
+  			var r30 = table.insertRow(30 );
+  			var r30c1 = r30.insertCell(0);
+  			var r30c2 = r30.insertCell(1);
+  			var r30c3 = r30.insertCell(2);
+  			var r30c4 = r30.insertCell(3);
+  			r30c1.innerHTML = '<button type="button"  " id="k3" ">k</button>;'
+  			r30c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r30c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r30c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
+  			var r31 = table.insertRow(31 );
+  			var r31c1 = r31.insertCell(0);
+  			var r31c2 = r31.insertCell(1);
+  			var r31c3 = r31.insertCell(2);
+  			var r31c4 = r31.insertCell(3);
+  			r31c1.innerHTML = '<button type="button"  " id="a5" ">a</button>;'
+  			r31c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r31c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r31c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
+  			var r32 = table.insertRow(32 );
+  			var r32c1 = r32.insertCell(0);
+  			var r32c2 = r32.insertCell(1);
+  			var r32c3 = r32.insertCell(2);
+  			var r32c4 = r32.insertCell(3);
+  			r32c1.innerHTML = '<button type="button"  " id="h" ">h</button>;'
+  			r32c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r32c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r32c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
+  			var r33 = table.insertRow(33  );
+  			var r33c1 = r33.insertCell(0);
+  			var r33c2 = r33.insertCell(1);
+  			var r33c3 = r33.insertCell(2);
+  			var r33c4 = r33.insertCell(3);
+  			r33c1.innerHTML = '<button type="button"  " id="aa3" ">aa</button>;'
+  			r33c2.innerHTML = '<select id="extn"><option value="" selected disabled hidden>select extn type</option><option value="none" >none</option><option value="voiced">voiced</option><option value="unvoiced">unvoiced</option><option value="unv-unasp-plo" >Unvoiced-Unasp-plosive</option><option value="unv-asp-plo" >Unvoiced-asp-plosive</option><option value="v-unasp-plo" >voiced-Unasp-plosive</option><option value="v-asp-plo" >voiced-asp-plosive</option></select>';
+  			r33c3.innerHTML='<select id="manner"><option value="" selected disabled hidden>select manner</option><option value="none" >none</option><option value="stop">stop</option><option value="nasal">nasal</option><option value="semi-vo" >semi-vowel</option><option value="short-vo" >short-vowel</option><option value="long-vo" >long-vowel</option><option value="dipth" >dipthong</option><option value="fri" >fricative</option></select>'
+  			r33c4.innerHTML='<select id="place"><option value="" selected disabled hidden>select place</option><option value="none" >none</option><option value="velar">velar</option><option value="platal">platal</option><option value="alveolar" >alveolar</option><option value="retroflex" >retroflex</option><option value="dental" >dental</option><option value="labial" >labial</option><option value="front-high" >front-high</option><option value="front-mid" >front-mid</option><option value="central-low" >central-low</option><option value="back-high" >back-high</option><option value="back-mid" >back-mid</option></select>'
+
 
 
 			$( "#v" ).click(function(){
@@ -290,6 +463,163 @@ console.log(wavesurfer.regions.list)
 			$( "#i1" ).click(function(){
 				wavesurfer.clearRegions();
 				wavesurfer.addRegion({id:'two',start:0.11,end:0.18,color: randomColor(0.1)});
+			});
+
+			$( "#d" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.18,end:0.293,color: randomColor(0.1)});
+			});
+
+			$( "#e1" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.295,end:0.405,color: randomColor(0.1)});
+			});
+
+			$( "#sh" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.413,end:0.555,color: randomColor(0.1)});
+			});
+
+			$( "#m" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.555,end:0.623,color: randomColor(0.1)});
+			});
+
+			$( "#a1" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.627,end:0.666,color: randomColor(0.1)});
+			});
+
+			$( "#n1" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.671,end:0.745,color: randomColor(0.1)});
+			});
+
+			$( "#t1" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.745,end:0.784,color: randomColor(0.1)});
+			});
+
+			$( "#r1" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.785,end:0.830,color: randomColor(0.1)});
+			});
+
+			$( "#aa1" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.830,end:0.945,color: randomColor(0.1)});
+			});
+
+			$( "#l" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			$( "#a" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#y" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#k1" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#e2" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#p" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#r2" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#a3" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#v" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#a4" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#k2" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#t2" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#aa2" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#n2" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#e3" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#ph" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#i2" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#r3" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#k3" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#a5" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#h" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
+			});
+
+			$( "#aa3" ).click(function(){
+				wavesurfer.clearRegions();
+				wavesurfer.addRegion({id:'two',start:0.945,end:0.994 ,color: randomColor(0.1)});
 			});
 
 		}
