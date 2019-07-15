@@ -1315,12 +1315,12 @@ slider.oninput = function () {
 
 			$( "#y" ).click(function(){
 				wavesurfer.clearRegions();
-				wavesurfer.addRegion({id:'two',start:1.737,end:1.180 ,color: randomColor(0.1)});
+				wavesurfer.addRegion({id:'two',start:1.737,end:1.780 ,color: randomColor(0.1)});
 			});
 
 			$( "#aa2" ).click(function(){
 				wavesurfer.clearRegions();
-				wavesurfer.addRegion({id:'two',start:1.181,end:1.859 ,color: randomColor(0.1)});
+				wavesurfer.addRegion({id:'two',start:1.781,end:1.859 ,color: randomColor(0.1)});
 			});
 
 			$( "#m2" ).click(function(){
